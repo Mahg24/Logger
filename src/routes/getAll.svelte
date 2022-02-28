@@ -9,11 +9,7 @@
 		response = await fetch(`${variables.apiUrl}/api/logger/${type}`)
 			.then((res) => res.json())
 			.then((data) => {
-				data.map((log) => {
-					console.log(log.message);
-					logs[logs.length] = { ...log.message, type: type };
-				});
-				console.log(logs);
+				console.log(variables.apiUrl);
 			});
 	}
 	// function addLog(data) {
